@@ -7,7 +7,7 @@ O que utiliza
 - Frontend: Flutter (Dart) que consome a API HTTP e exibe telas de lista, detalhes, comparação e rankings.
 - Dados: fontes públicas em JSON são normalizadas e agregadas em tabelas como `historico_completo` e `ranking_geral`.
 
-Como funciona (visão geral)
+Como funciona
 - Coleta e normalização: um script baixa dados brutos, renomeia e limpa colunas, mapeia posições e trata valores ausentes.
 - Cálculo de métricas: a partir dos scouts por rodada são aplicados pesos e regras para calcular pontuações por categoria (ataque, defesa, penalidades) e a pontuação fantasy total; essas métricas são agregadas por jogador ao longo da temporada.
 - Persistência: os resultados são gravados em um banco SQLite com tabelas que representam o histórico por rodada e o ranking consolidado da temporada.
@@ -22,5 +22,4 @@ Visão resumida das responsabilidades
 Extensibilidade
 - A arquitetura é simples e modular: novos endpoints, métricas ou visualizações podem ser adicionados sem alterar toda a estrutura; o pipeline de dados pode ser ajustado para suportar novas fontes ou regras de cálculo.
 
-Este texto descreve a ideia e o fluxo de dados do projeto sem entrar em detalhes operacionais.
 
