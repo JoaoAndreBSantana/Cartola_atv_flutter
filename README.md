@@ -1,6 +1,7 @@
 Cartola App
 
 Projeto dividido em duas partes: um backend Python que prepara e expõe dados, e um frontend Flutter que consome esses dados para mostrar estatísticas do Cartola (temporada 2025).
+LINK YOUTUBE: https://youtu.be/WmR227Xu20Q
 
 O que utiliza
 - Backend: Python, FastAPI e SQLite para servir os dados; um script de processamento usa bibliotecas de análise (ex.: pandas) para transformar dados brutos em tabelas prontas para consulta.
